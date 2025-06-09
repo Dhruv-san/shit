@@ -1,6 +1,13 @@
 {
-  "name": "cofindr",
-  "version": "0.1.0",
+  "name": "cofin    "framer-motion": "^10.16.4",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
+    "next": "14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-tinder-card": "^1.6.4",
+    "tailwind-merge": "^2.1.0"rsion": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
