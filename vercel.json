@@ -1,5 +1,28 @@
 {
   "version": 2,
+  "buildCommand": "next build",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_NHOST_SUBDOMAIN": "jdhikwjcjpnrsgpoooom",
+    "NEXT_PUBLIC_NHOST_REGION": "ap-south-1"
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/_next/$1"
+    },
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    }
+  ]
+}on": 2,
   "buildCommand": "npm run build",
   "framework": "nextjs",
   "installCommand": "npm install",
