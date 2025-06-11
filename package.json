@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=20.11.0",
-    "npm": ">=10.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "scripts": {
-    "preinstall": "node -e \"const v=process.version.slice(1).split('.').map(Number);if(v[0]<20||(v[0]===20&&v[1]<11)){console.error('Node.js 20.11.0+ required. Current:',process.version);process.exit(1)}\"",
+    "preinstall": "node -e \"const v=process.version.slice(1).split('.').map(Number);if(v[0]<18){console.error('Node.js 18.0.0+ required. Current:',process.version);process.exit(1)}\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
