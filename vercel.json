@@ -3,6 +3,7 @@
   "framework": "nextjs",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
+  "outputDirectory": ".next",
   "public": false,
   "regions": ["iad1"],
   "env": {
@@ -10,9 +11,11 @@
     "NEXT_PUBLIC_NHOST_REGION": "ap-south-1"
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-},
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
@@ -27,18 +30,4 @@
       }
     }
   ]
-}on": 2,
-  "buildCommand": "npm run build",
-  "framework": "nextjs",
-  "installCommand": "npm install",
-  "outputDirectory": ".next",
-  "env": {
-    "NEXT_PUBLIC_NHOST_SUBDOMAIN": "jdhikwjcjpnrsgpoooom",
-    "NEXT_PUBLIC_NHOST_REGION": "ap-south-1"
-  }
-}ersion": 2,
-  "buildCommand": "next build",
-  "framework": "nextjs",
-  "installCommand": "npm install",
-  "outputDirectory": ".next"
 }
