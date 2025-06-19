@@ -29,8 +29,8 @@ export default function News() {
             <p className="text-sm text-gray-400">{a.description}</p>
             <a href={a.url} className="text-blue-400" target="_blank" rel="noopener noreferrer">Read more</a>
           </div>
-        ))}        ))}
-      </div>      </div>
-    </div>    </div>
-  );  );
-}}
+        ))}
+      </div>
+    </div>
+  );
+}
