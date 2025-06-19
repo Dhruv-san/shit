@@ -1,16 +1,15 @@
 "use client";
 import { useEffect } from "react";
-import { useUser } from "@nhost/nextjs";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Home() {
-  const { isSignedIn, isLoading } = useUser();
   const router = useRouter();
 
   useEffect(() => {
-    if (!isLoading && isSignedIn) router.push("/dashboard");
-  }, [isSignedIn, isLoading]);
+    // Optionally, check auth state here if you have a custom hook or context
+    // For now, just leave as landing page
+  }, []);
 
   return (
     <main className="flex flex-col items-center justify-center h-screen bg-black text-white">
