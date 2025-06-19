@@ -63,26 +63,71 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen p-4 flex flex-col">
-      <h1 className="text-2xl font-bold mb-4">Chat</h1>
-      <div className="flex-1 overflow-y-auto space-y-2 mb-4">
-        {loading && <div>Loading...</div>}
-        {messages.map((msg) => (
-          <div key={msg.id} className="bg-gray-800 p-2 rounded">
-            <strong>{msg.sender}:</strong> {msg.text}
+    <div className="flex h-[calc(100vh-5rem)] flex-col overflow-hidden bg-white">
+      <div className="flex items-center border-b px-6 py-4">
+        <div className="flex items-center space-x-4">
+          <div className="h-10 w-10 rounded-full bg-blue-500 text-white flex items-center justify-center">
+            JD
           </div>
-        ))}
+          <div>
+            <h2 className="font-semibold text-gray-900">John Doe</h2>
+            <p className="text-sm text-gray-500">Online</p>
+          </div>
+        </div>
       </div>
-      <div className="flex gap-2">
-        <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="flex-1 px-3 py-2 text-black rounded"
-          placeholder="Type a message..."
-        />
-        <button onClick={sendMessage} className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600" disabled={loading}>
-          Send
-        </button>
+
+      <div className="flex-1 overflow-y-auto p-6">
+        {loading ? (
+          <div className="flex h-full items-center justify-center">
+            <div className="flex items-center space-x-2 text-gray-500">
+              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400"></div>
+              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: '0.2s' }}></div>
+              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: '0.4s' }}></div>
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-4">
+            {messages.map((msg) => (
+              <div
+                key={msg.id}
+                className={`flex ${msg.sender === "You" ? "justify-end" : "justify-start"}`}
+              >
+                <div
+                  className={`max-w-[70%] rounded-2xl px-4 py-2 ${
+                    msg.sender === "You"
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-100 text-gray-900"
+                  }`}
+                >
+                  <p className="text-sm">{msg.text}</p>
+                  <p className="mt-1 text-xs opacity-75">
+                    {msg.sender} • {new Date(msg.created_at).toLocaleTimeString()}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="border-t bg-white p-4">
+        <div className="flex items-center space-x-2 rounded-lg border bg-white p-2">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={(e) => e.key === "Enter" && sendMessage()}
+            placeholder="Type your message..."
+            className="flex-1 bg-transparent px-2 py-1 focus:outline-none"
+          />
+          <button
+            onClick={sendMessage}
+            disabled={!input.trim() || loading}
+            className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-600 disabled:opacity-50"
+          >
+            Send
+          </button>
+        </div>
       </div>
     </div>
   );
