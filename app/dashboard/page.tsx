@@ -2,14 +2,21 @@
 import TinderCard from "react-tinder-card";
 import { useEffect, useState } from "react";
 
-const dummyProfiles = [
+interface Profile {
+	id: number;
+	name: string;
+	skill: string;
+	image: string;
+}
+
+const dummyProfiles: Profile[] = [
 	{ id: 1, name: "Ayaan", skill: "AI Dev", image: "/avatars/1.png" },
 	{ id: 2, name: "Meera", skill: "Product Designer", image: "/avatars/2.png" },
 	{ id: 3, name: "Ravi", skill: "Blockchain Eng.", image: "/avatars/3.png" },
 ];
 
 export default function Dashboard() {
-	const [profiles, setProfiles] = useState([]);
+	const [profiles, setProfiles] = useState<Profile[]>([]);
 
 	useEffect(() => {
 		// Replace with real fetch
