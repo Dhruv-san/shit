@@ -20,54 +20,58 @@ export default function News() {
   }, []);
 
   return (
-    <div className="space-y-6 p-6">
+    <div className="space-y-6 p-6 bg-[#F8EDED] text-[#173B45] min-h-screen">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900">TechCrunch News</h1>
+        <h1 className="text-2xl font-bold text-[#173B45]">TechCrunch News</h1>
         <a
           href="https://techcrunch.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-600"
+          className="text-[#FF8225] hover:text-[#B43F3F]"
         >
           Visit TechCrunch →
         </a>
       </div>
       
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article, idx) => (
-          <a
-            key={idx}
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:shadow-lg"
-          >
-            <div className="p-6">
-              <h2 className="line-clamp-2 text-lg font-semibold text-gray-900 group-hover:text-blue-600">
-                {article.title}
-              </h2>
-              <p className="mt-2 line-clamp-3 text-sm text-gray-600">
-                {article.description}
-              </p>
-              <div className="mt-4 flex items-center text-sm text-blue-500">
-                Read article
-                <svg
-                  className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+        {articles.length === 0 ? (
+          <div className="col-span-full text-center text-[#FF8225] text-lg font-semibold">No news found or loading...</div>
+        ) : (
+          articles.map((article, idx) => (
+            <a
+              key={idx}
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group overflow-hidden rounded-xl border border-[#FF8225]/30 bg-white shadow-sm transition-all duration-200 hover:shadow-lg"
+            >
+              <div className="p-6">
+                <h2 className="line-clamp-2 text-lg font-semibold text-[#173B45] group-hover:text-[#FF8225]">
+                  {article.title}
+                </h2>
+                <p className="mt-2 line-clamp-3 text-sm text-[#173B45]/80">
+                  {article.description}
+                </p>
+                <div className="mt-4 flex items-center text-sm text-[#FF8225]">
+                  Read article
+                  <svg
+                    className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </a>
-        ))}
+            </a>
+          ))
+        )}
       </div>
     </div>
   );

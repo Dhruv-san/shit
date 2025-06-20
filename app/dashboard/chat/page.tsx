@@ -63,15 +63,15 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="flex h-[calc(100vh-5rem)] flex-col overflow-hidden bg-white">
-      <div className="flex items-center border-b px-6 py-4">
+    <div className="flex h-[calc(100vh-5rem)] flex-col overflow-hidden bg-[#F8EDED] text-[#173B45]">
+      <div className="flex items-center border-b border-[#FF8225] px-6 py-4 bg-[#F8EDED]">
         <div className="flex items-center space-x-4">
-          <div className="h-10 w-10 rounded-full bg-blue-500 text-white flex items-center justify-center">
+          <div className="h-10 w-10 rounded-full bg-[#FF8225] text-white flex items-center justify-center font-bold">
             JD
           </div>
           <div>
-            <h2 className="font-semibold text-gray-900">John Doe</h2>
-            <p className="text-sm text-gray-500">Online</p>
+            <h2 className="font-semibold text-[#173B45]">John Doe</h2>
+            <p className="text-sm text-[#FF8225]">Online</p>
           </div>
         </div>
       </div>
@@ -79,10 +79,10 @@ export default function ChatPage() {
       <div className="flex-1 overflow-y-auto p-6">
         {loading ? (
           <div className="flex h-full items-center justify-center">
-            <div className="flex items-center space-x-2 text-gray-500">
-              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400"></div>
-              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: '0.2s' }}></div>
-              <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400" style={{ animationDelay: '0.4s' }}></div>
+            <div className="flex items-center space-x-2 text-[#FF8225]">
+              <div className="h-2 w-2 animate-bounce rounded-full bg-[#FF8225]"></div>
+              <div className="h-2 w-2 animate-bounce rounded-full bg-[#FF8225]" style={{ animationDelay: '0.2s' }}></div>
+              <div className="h-2 w-2 animate-bounce rounded-full bg-[#FF8225]" style={{ animationDelay: '0.4s' }}></div>
             </div>
           </div>
         ) : (
@@ -95,8 +95,8 @@ export default function ChatPage() {
                 <div
                   className={`max-w-[70%] rounded-2xl px-4 py-2 ${
                     msg.sender === "You"
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-100 text-gray-900"
+                      ? "bg-[#FF8225] text-white"
+                      : "bg-white text-[#173B45] border border-[#FF8225]/30"
                   }`}
                 >
                   <p className="text-sm">{msg.text}</p>
@@ -110,20 +110,20 @@ export default function ChatPage() {
         )}
       </div>
 
-      <div className="border-t bg-white p-4">
-        <div className="flex items-center space-x-2 rounded-lg border bg-white p-2">
+      <div className="border-t border-[#FF8225] bg-[#F8EDED] p-4">
+        <div className="flex items-center space-x-2 rounded-lg border border-[#FF8225]/30 bg-white p-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === "Enter" && sendMessage()}
             placeholder="Type your message..."
-            className="flex-1 bg-transparent px-2 py-1 focus:outline-none"
+            className="flex-1 bg-transparent px-2 py-1 focus:outline-none text-[#173B45]"
           />
           <button
             onClick={sendMessage}
             disabled={!input.trim() || loading}
-            className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-600 disabled:opacity-50"
+            className="rounded-lg bg-[#FF8225] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#B43F3F] disabled:opacity-50"
           >
             Send
           </button>

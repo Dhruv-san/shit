@@ -15,11 +15,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   };
 
   return (
-    <div className="relative flex min-h-screen">
+    <div className="relative flex min-h-screen bg-[#F8EDED] text-[#173B45]">
       <Sidebar />
       <div className="flex flex-1 flex-col">
         <Header title={getTitle()} />
-        <main className="flex-1 overflow-y-auto bg-gray-50 p-4 dark:bg-gray-800">
+        <main className="flex-1 overflow-y-auto p-4">
           <div className="mx-auto max-w-7xl">{children}</div>
         </main>
       </div>
