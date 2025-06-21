@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #1d4ed8; /* Tailwind's blue-600 */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem; /* Tailwind's rounded-md */
+  background-color: #1d4ed8; /* Tailwind's blue-600 */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e40af; /* Tailwind's blue-700 */
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.how-it-works-card {
+  background-color: #e5e7eb; /* Tailwind's gray-200 */
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.faq-item {
+  margin: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .feature-card, .how-it-works-card, .testimonial-card {
+    margin: 0.5rem 0;
+  }
+}
