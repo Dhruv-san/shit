@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Saved', href: '/dashboard/saved', icon: '🔖' },
   { name: 'Swipe', href: '/dashboard/swipe', icon: '👆' },
   { name: 'Startup', href: '/dashboard/startup', icon: '🚀' },
-  { name: 'Profile Form', href: '/dashboard/chat', icon: '📝' }, // Add link to profile form
 ];
 
 export function Sidebar() {
