@@ -94,7 +94,7 @@ export default function LandingPage() {
 						skills, and drive. Stop searching, start building.
 					</p>
 					<a
-						href="#cta"
+						href="/login"
 						className="btn-primary text-white font-semibold py-4 px-10 rounded-full text-xl inline-block transition duration-300 ease-in-out"
 						style={{
 							background:
@@ -412,7 +412,7 @@ export default function LandingPage() {
 						awakens!
 					</p>
 					<a
-						href="#"
+						href="/login"
 						className="btn-primary text-white font-semibold py-4 px-12 rounded-full text-2xl inline-block transition duration-300 ease-in-out"
 						style={{
 							background:
