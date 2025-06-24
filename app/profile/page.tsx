@@ -141,152 +141,148 @@ export default function ProfilePage() {
                 placeholder="Company"
                 value={job.company}
                 onChange={e => handleEmploymentChange(idx, "company", e.target.value)}
-                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
+                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
               />
               <input
                 type="text"
                 placeholder="Role"
-                value={job.role}value={job.role}value={job.role}
-                onChange={e => handleEmploymentChange(idx, "role", e.target.value)}ange={e => handleEmploymentChange(idx, "role", e.target.value)}ange={e => handleEmploymentChange(idx, "role", e.target.value)}
-                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
+                value={job.role}
+                onChange={e => handleEmploymentChange(idx, "role", e.target.value)}
+                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
               />
               <input
                 type="text"
                 placeholder="Duration"
                 value={job.duration}
                 onChange={e => handleEmploymentChange(idx, "duration", e.target.value)}
-                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
+                className="flex-1 px-2 py-1 border border-[#FF8225]/30 rounded-lg bg-[#F8EDED] text-[#173B45]"
               />
               <button type="button" onClick={() => removeEmployment(idx)} className="text-[#B43F3F] font-bold px-2">×</button>
             </div>
           ))}
-          <button type="button" onClick={addEmployment} className="mt-2 px-4 py-1 bg-[#FF8225] text-white rounded-lg">Add Job</button>n type="button" onClick={addEmployment} className="mt-2 px-4 py-1 bg-[#FF8225] text-white rounded-lg">Add Job</button>n type="button" onClick={addEmployment} className="mt-2 px-4 py-1 bg-[#FF8225] text-white rounded-lg">Add Job</button>
+          <button type="button" onClick={addEmployment} className="mt-2 px-4 py-1 bg-[#FF8225] text-white rounded-lg">Add Job</button>
         </div>
         {/* Background & Experience */}
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="education">Education (Degrees, Universities, Fields of Study)</label>
-          <textarea id="education" name="education" value={form.education} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />ion" name="education" value={form.education} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />ion" name="education" value={form.education} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="education" name="education" value={form.education} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="skills">Skills (Technical, Business, Soft Skills)</label>
-          <textarea id="skills" name="skills" value={form.skills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="skills" name="skills" value={form.skills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="skills" name="skills" value={form.skills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="skills" name="skills" value={form.skills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="role">Your Role/Contribution</label>
-          <input id="role" name="role" value={form.role} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />tarea id="role" name="role" value={form.role} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="role" name="role" value={form.role} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <input id="role" name="role" value={form.role} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="expertise">Areas of Expertise/Domain Expertise</label>
-          <textarea id="expertise" name="expertise" value={form.expertise} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />ull px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />ull px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="expertise" name="expertise" value={form.expertise} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="lookingForSkills">Co-founder Skills Sought</label>
-          <input id="lookingForSkills" name="lookingForSkills" value={form.lookingForSkills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />er border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />er border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <input id="lookingForSkills" name="lookingForSkills" value={form.lookingForSkills} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="accomplishments">Impressive Accomplishments</label>
-          <textarea id="accomplishments" name="accomplishments" value={form.accomplishments} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} /> rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} /> rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="accomplishments" name="accomplishments" value={form.accomplishments} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="lookingForExperience">Co-founder Experience Level</label>
-          <input id="lookingForExperience" name="lookingForExperience" value={form.lookingForExperience} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />der-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />der-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <input id="lookingForExperience" name="lookingForExperience" value={form.lookingForExperience} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="lookingForCommitment">Co-founder Commitment Level</label>
-          <input id="lookingForCommitment" name="lookingForCommitment" value={form.lookingForCommitment} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ull px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ull px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <input id="lookingForCommitment" name="lookingForCommitment" value={form.lookingForCommitment} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="workingStyle">Working Style Preferences</label>
-          <input id="workingStyle" name="workingStyle" value={form.workingStyle} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" /> rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" /> rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <input id="workingStyle" name="workingStyle" value={form.workingStyle} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="lookingForTraits">Personality Traits/Values</label>
-          <input id="lookingForTraits" name="lookingForTraits" value={form.lookingForTraits} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />-[#173B45]" />-[#173B45]" />
+          <input id="lookingForTraits" name="lookingForTraits" value={form.lookingForTraits} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="lookingForGeography">Geographic Preferences</label>
-          <input id="lookingForGeography" name="lookingForGeography" value={form.lookingForGeography} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />45]" />45]" />
+          <input id="lookingForGeography" name="lookingForGeography" value={form.lookingForGeography} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="industryInterest">Industry/Idea Interest</label>
-          <input id="industryInterest" name="industryInterest" value={form.industryInterest} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />nterest" name="industryInterest" value={form.industryInterest} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />nterest" name="industryInterest" value={form.industryInterest} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <input id="industryInterest" name="industryInterest" value={form.industryInterest} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="motivation">Why do you want to start a startup?</label>
-          <textarea id="motivation" name="motivation" value={form.motivation} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="motivation" name="motivation" value={form.motivation} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="motivation" name="motivation" value={form.motivation} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="motivation" name="motivation" value={form.motivation} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
           <label className="block text-[#173B45] mb-2" htmlFor="goals">Your long-term goals</label>
-          <textarea id="goals" name="goals" value={form.goals} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="goals" name="goals" value={form.goals} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />tarea id="goals" name="goals" value={form.goals} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <textarea id="goals" name="goals" value={form.goals} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-[#173B45] mb-2" htmlFor="exclusive">Willingness to commit exclusively</label>abel className="block text-[#173B45] mb-2" htmlFor="exclusive">Willingness to commit exclusively</label>abel className="block text-[#173B45] mb-2" htmlFor="exclusive">Willingness to commit exclusively</label>
-            <input id="exclusive" name="exclusive" value={form.exclusive} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />sive} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />sive} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+            <label className="block text-[#173B45] mb-2" htmlFor="exclusive">Willingness to commit exclusively</label>
+            <input id="exclusive" name="exclusive" value={form.exclusive} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
           </div>
           <div>
             <label className="block text-[#173B45] mb-2" htmlFor="timeOnIdea">How long working on this?</label>
-            <input id="timeOnIdea" name="timeOnIdea" value={form.timeOnIdea} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ut id="timeOnIdea" name="timeOnIdea" value={form.timeOnIdea} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ut id="timeOnIdea" name="timeOnIdea" value={form.timeOnIdea} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
-          </div>>>
+            <input id="timeOnIdea" name="timeOnIdea" value={form.timeOnIdea} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          </div>
         </div>
         <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-[#173B45] mb-2" htmlFor="users">Active Users</label>
-            <input id="users" name="users" value={form.users} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ge={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ge={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
-          </div>>>
+            <input id="users" name="users" value={form.users} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          </div>
           <div>
             <label className="block text-[#173B45] mb-2" htmlFor="companyName">Company Name</label>
-            <input id="companyName" name="companyName" value={form.companyName} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ut id="companyName" name="companyName" value={form.companyName} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ut id="companyName" name="companyName" value={form.companyName} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
-          </div>>>
+            <input id="companyName" name="companyName" value={form.companyName} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          </div>
         </div>
         <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-[#173B45] mb-2" htmlFor="revenue">Revenue</label>abel className="block text-[#173B45] mb-2" htmlFor="revenue">Revenue</label>abel className="block text-[#173B45] mb-2" htmlFor="revenue">Revenue</label>
-            <input id="revenue" name="revenue" value={form.revenue} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" /> value={form.revenue} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" /> value={form.revenue} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+            <label className="block text-[#173B45] mb-2" htmlFor="revenue">Revenue</label>
+            <input id="revenue" name="revenue" value={form.revenue} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
           </div>
           <div>
-            <label className="block text-[#173B45] mb-2" htmlFor="milestones">Milestones Achieved</label>abel className="block text-[#173B45] mb-2" htmlFor="milestones">Milestones Achieved</label>abel className="block text-[#173B45] mb-2" htmlFor="milestones">Milestones Achieved</label>
-            <input id="milestones" name="milestones" value={form.milestones} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />tones" value={form.milestones} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />tones" value={form.milestones} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+            <label className="block text-[#173B45] mb-2" htmlFor="milestones">Milestones Achieved</label>
+            <input id="milestones" name="milestones" value={form.milestones} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
           </div>
         </div>
-        <div className="mb-4">lassName="mb-4">lassName="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="revenueModel">Revenue Model</label>5] mb-2" htmlFor="revenueModel">Revenue Model</label>5] mb-2" htmlFor="revenueModel">Revenue Model</label>
-          <input id="revenueModel" name="revenueModel" value={form.revenueModel} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />ded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
-        </div>
-        <div className="mb-4">lassName="mb-4">lassName="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="competitors">Competitors</label>ock text-[#173B45] mb-2" htmlFor="competitors">Competitors</label>ock text-[#173B45] mb-2" htmlFor="competitors">Competitors</label>
-          <input id="competitors" name="competitors" value={form.competitors} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" /> text-[#173B45]" /> text-[#173B45]" />
-        </div>
-        <div className="mb-4">lassName="mb-4">lassName="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="uniqueInsight">Why this idea? Unique insight/domain expertise</label>ock text-[#173B45] mb-2" htmlFor="uniqueInsight">Why this idea? Unique insight/domain expertise</label>ock text-[#173B45] mb-2" htmlFor="uniqueInsight">Why this idea? Unique insight/domain expertise</label>
-          <textarea id="uniqueInsight" name="uniqueInsight" value={form.uniqueInsight} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />e={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />e={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+        <div className="mb-4">
+          <label className="block text-[#173B45] mb-2" htmlFor="revenueModel">Revenue Model</label>
+          <input id="revenueModel" name="revenueModel" value={form.revenueModel} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="goToMarket">How will you get users/customers? (Go-to-market strategy)</label>ock text-[#173B45] mb-2" htmlFor="goToMarket">How will you get users/customers? (Go-to-market strategy)</label>ock text-[#173B45] mb-2" htmlFor="goToMarket">How will you get users/customers? (Go-to-market strategy)</label>
-          <textarea id="goToMarket" name="goToMarket" value={form.goToMarket} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+          <label className="block text-[#173B45] mb-2" htmlFor="competitors">Competitors</label>
+          <input id="competitors" name="competitors" value={form.competitors} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="legal">Legal Structure</label>ock text-[#173B45] mb-2" htmlFor="legal">Legal Structure</label>ock text-[#173B45] mb-2" htmlFor="legal">Legal Structure</label>
-          <input id="legal" name="legal" value={form.legal} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />rder border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />rder border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <label className="block text-[#173B45] mb-2" htmlFor="uniqueInsight">Why this idea? Unique insight/domain expertise</label>
+          <textarea id="uniqueInsight" name="uniqueInsight" value={form.uniqueInsight} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
         </div>
         <div className="mb-4">
-          <label className="block text-[#173B45] mb-2" htmlFor="equity">Equity Split (if not incorporated)</label>not incorporated)</label>not incorporated)</label>
-          <input id="equity" name="equity" value={form.equity} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <label className="block text-[#173B45] mb-2" htmlFor="goToMarket">How will you get users/customers? (Go-to-market strategy)</label>
+          <textarea id="goToMarket" name="goToMarket" value={form.goToMarket} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" rows={2} />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#173B45] mb-2" htmlFor="legal">Legal Structure</label>
+          <input id="legal" name="legal" value={form.legal} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+        </div>
+        <div className="mb-4">
+          <label className="block text-[#173B45] mb-2" htmlFor="equity">Equity Split (if not incorporated)</label>
+          <input id="equity" name="equity" value={form.equity} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
         <div className="mb-6">
-          <label className="block text-[#173B45] mb-2" htmlFor="videoUrl">Video Introduction (YouTube URL)</label>className="block text-[#173B45] mb-2" htmlFor="videoUrl">Video Introduction (YouTube URL)</label>className="block text-[#173B45] mb-2" htmlFor="videoUrl">Video Introduction (YouTube URL)</label>
-          <input id="videoUrl" name="videoUrl" value={form.videoUrl} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />put id="videoUrl" name="videoUrl" value={form.videoUrl} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />put id="videoUrl" name="videoUrl" value={form.videoUrl} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
+          <label className="block text-[#173B45] mb-2" htmlFor="videoUrl">Video Introduction (YouTube URL)</label>
+          <input id="videoUrl" name="videoUrl" value={form.videoUrl} onChange={handleChange} className="w-full px-4 py-2 border border-[#FF8225]/30 rounded-lg focus:outline-none focus:border-[#FF8225] bg-[#F8EDED] text-[#173B45]" />
         </div>
-        {error && <div className="mb-4 text-[#B43F3F] text-center text-sm">{error}</div>}">{error}</div>}">{error}</div>}
-        {success && <div className="mb-4 text-green-600 text-center text-sm">Profile saved!</div>}-600 text-center text-sm">Profile saved!</div>}-600 text-center text-sm">Profile saved!</div>}
-        <button type="submit" disabled={loading} className="w-full bg-[#FF8225] hover:bg-[#B43F3F] text-white font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50">ype="submit" disabled={loading} className="w-full bg-[#FF8225] hover:bg-[#B43F3F] text-white font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50">ype="submit" disabled={loading} className="w-full bg-[#FF8225] hover:bg-[#B43F3F] text-white font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50">
-          {loading ? "Saving..." : "Save Profile"}ading ? "Saving..." : "Save Profile"}ading ? "Saving..." : "Save Profile"}
-        </button>button>button>
-      </form>  </form>  </form>
-    </div>   </div>   </div>
-  );  );  );
-
-
+        {error && <div className="mb-4 text-[#B43F3F] text-center text-sm">{error}</div>}
+        {success && <div className="mb-4 text-green-600 text-center text-sm">Profile saved!</div>}
+        <button type="submit" disabled={loading} className="w-full bg-[#FF8225] hover:bg-[#B43F3F] text-white font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50">
+          {loading ? "Saving..." : "Save Profile"}
+        </button>
+      </form>
+    </div>
+  );
 }
-
-}}
